@@ -1,3 +1,7 @@
+*{
+    transition: 0.5s all;
+}
+
 html{
     margin: 0;
 }
@@ -25,17 +29,23 @@ header ol{
 header ol li{
     display: inline;
     color: black;
-    padding-left: 4%;
+    margin-left: 3%;
     font-size: 1.1rem;
     float: left;
+    text-align: center;
+    width: 60px;
 }
 
 header ol li a{
     text-decoration: none;
     color:black;
+    transition: 0.2s all;
 }
 header ol li a:hover{
     font-size: 1.2rem;
+    color: #6620A7;
+    text-decoration: underline;
+    font-weight: 600;
 }
 
 /*header ol li :not(a:hover){
@@ -48,7 +58,7 @@ header ol li:last-child{
 }
 
 .container{
-    background-color: blueviolet;
+    background-color: #6620A7;
     margin-top: 0;
     height: 80%;
     display: flex;
@@ -64,11 +74,13 @@ header ol li:last-child{
     background-color: white;
     text-align: center;
     border-radius: 10px;
+    box-shadow: 1px 5px 25px 0;
+    transform: translateY(10%);
 
 }
 
-#carrousel{
-    margin-top: 0;
+.container #carrousel:hover{
+    transform: translateX(-5px);
 }
 
 .card img{
